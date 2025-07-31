@@ -1,5 +1,23 @@
 /* estilo global */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+/* font-family: "Instrument Sans", sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+/* font-family: "Geist Mono", monospace; */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+:root { 
+    --cor0: #000000; 
+    --cor1: #808CFD;
+    --cor2: #808DFD;
+    --cor3: #E9ECFF;
+    --cor4: #FB3AA2;
+    --cor5: #FFFFFF;
+    --cor6: #5D2DE6;
 }
