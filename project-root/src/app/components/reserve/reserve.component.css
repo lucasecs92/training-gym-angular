@@ -1,0 +1,39 @@
+.reserve-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--cor2);
+    height: 40vh; 
+    gap: 1.2rem;
+}
+
+p {
+    font-family: "Geist", sans-serif;
+}
+
+h1 {
+    font-family: "Anek Malayalam", sans-serif;
+    font-size: 3.5em;
+    padding: 0 15rem;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.reserve-btn {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.9em;
+    padding: 1rem 0.1rem;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    width: 15%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.reserve-btn:hover {
+    background-color: var(--cor0);
+    color: var(--cor5);
+    cursor: pointer;
+}

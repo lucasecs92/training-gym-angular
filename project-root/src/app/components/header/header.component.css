@@ -8,8 +8,10 @@ h1 {
     justify-content: flex-start;
     border-top: 1px solid var(--cor0);
     border-bottom: 1px solid var(--cor0);
+    letter-spacing: -6.5px;
 }
 
-span {
+.header-span {
     color: var(--cor2);
+    padding-left: 15px;
 }

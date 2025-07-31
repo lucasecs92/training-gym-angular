@@ -4,10 +4,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { CommunityComponent } from './components/community/community.component';
+import { ReserveComponent } from './components/reserve/reserve.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, NavbarComponent, ArticlesComponent, CommunityComponent],
+  imports: [RouterOutlet, HeaderComponent, NavbarComponent, ArticlesComponent, CommunityComponent, ReserveComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
