@@ -1,0 +1,60 @@
+.articles-wrap {
+    display: flex;
+    background-color: var(--cor3);
+}
+
+.aside-one,
+.aside-two,
+.aside-three {
+    width: 50%;
+    padding: 1.2rem 1.2rem 3.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-two {
+    border-right: 1px solid var(--cor0);
+}
+
+.gym-image-one {
+    width: 100%;
+    height: 700px;
+}
+.gym-image-two {
+    width: 57%;
+    height: 700px;
+}
+
+.article-title {
+    font-size: 3em;
+    font-family: "Anek Tamil", sans-serif;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+p {
+    font-size: 16px;
+    color: var(--cor0);
+    font-family: "Geist Mono", monospace;
+    font-weight: 400;
+}
+
+.about-us {
+    padding: 0.5rem 1.3rem;
+    background-color: var(--cor0);
+    color: var(--cor5);
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.about-us:hover {
+    cursor: pointer;
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
