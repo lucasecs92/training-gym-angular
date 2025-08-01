@@ -1,0 +1,11 @@
+.footer-container {
+    height: 40vh;
+    background-color: var(--cor3);
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
