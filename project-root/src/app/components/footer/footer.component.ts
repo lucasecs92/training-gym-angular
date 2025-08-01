@@ -11,6 +11,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  logoUrl: string = '../../../assets/images/logo-icon.svg';
+  logoUrl: string = '../../../assets/images/icon-01.svg';
   logoAltText: string = 'Logo Training GYN';
 }

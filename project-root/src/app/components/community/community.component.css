@@ -66,11 +66,12 @@ h1 {
 .btn-aulas {
     padding: 0.5rem 1rem;
     background-color: var(--cor0);
-    color: var(--cor5);
+    color: var(--cor3);
     width: 20%;
     text-align: center;
     border-radius: 5px;
     font-size: 0.9em;
+    transition: background 0.3s ease-in-out;
 }
 
 .btn-aulas:hover {

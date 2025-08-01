@@ -1,11 +1,64 @@
 .footer-container {
-    height: 40vh;
     background-color: var(--cor3);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 1.5rem;
+    gap: 10rem;
+    border-top: 1px solid var(--cor0);
 }
 
 .footer-top{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.navbar-logo {
+   width: 220px;
+   height: 130px;
+}
+
+h1 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 3em;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact ,
+.footer-hours,
+.footer-social
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Anek Malayalam", sans-serif;
+    font-size: 1.3em;
+}
+
+.footer-div-wrap {
+    display: flex;
+    flex-direction: column;
+    font-family: "Geist", sans-serif;
+    font-size: 0.7em;
+}
+
+a {
+    color: var(--cor0);
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--cor1);
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 

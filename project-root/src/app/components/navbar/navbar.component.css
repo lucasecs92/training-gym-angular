@@ -30,16 +30,24 @@
 
 .navbar-ul li:hover {
     cursor: pointer;
-    text-decoration: underline;
+}
+
+.li-options {
+   transition: color 0.3s ease-in-out; 
+}
+
+.li-options:hover {
+    color: var(--cor1);
 }
 
 .li-reserve {
     background-color: var(--cor1);
     padding: 10px 20px;
     border-radius: 7px;
+    transition: background 0.5s ease-in-out;
 }
 
 .li-reserve:hover {
     background-color: var(--cor0);
-    color: var(--cor5);
+    color: var(--cor3);
 }
