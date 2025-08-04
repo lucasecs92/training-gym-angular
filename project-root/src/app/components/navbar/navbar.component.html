@@ -1,10 +1,29 @@
-<section class="navbar-container">
+<section class="navbar-container" [class.menu-open]="isMenuOpen">
     <section class="navbar-wrap">
         <img [ngSrc]="logoUrl" [alt]="logoAltText" width="50" height="50" class="navbar-logo">
         <h1>TrainingGYM</h1>
     </section>
-    <section>
+
+    <!-- Ícone do Menu (só aparece em telas pequenas) -->
+    <span class="material-symbols-outlined menu-icon" (click)="toggleMenu()">
+        {{ isMenuOpen ? 'remove' : 'add' }}
+    </span>
+
+    <!-- Navegação para Desktop -->
+    <section class="navbar-links-desktop">
         <ul class="navbar-ul">
+            <li class="li-options">INÍCIO</li>
+            <li class="li-options">SOBRE</li>
+            <li class="li-reserve">RESERVE SEU LUGAR</li>
+        </ul>
+    </section>
+
+    <!-- 
+    Navegação para Mobile (renderizada fora do fluxo principal quando o menu é clicado)
+    Usamos *ngIf para adicionar/remover do DOM
+    -->
+    <section *ngIf="isMenuOpen" class="navbar-links-mobile">
+        <ul class="navbar-ul-mobile">
             <li class="li-options">INÍCIO</li>
             <li class="li-options">SOBRE</li>
             <li class="li-reserve">RESERVE SEU LUGAR</li>

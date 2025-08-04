@@ -5,6 +5,14 @@
     padding: 15px 20px;
     background-color: var(--cor3);
     color: var(--cor0);
+    position: relative;
+    transition: background-color 0.4s ease-in-out;
+}
+
+/* MODIFICAÇÃO: Nova regra para quando o menu estiver aberto */
+/* Isso muda a cor do navbar quando a classe .menu-open é adicionada */
+.navbar-container.menu-open {
+    background-color: var(--cor5); /* <-- NOVA REGRA */
 }
 
 .navbar-wrap {
@@ -16,38 +24,127 @@
     font-family: "Instrument Sans", sans-serif;
 }
 
+/* Esconde o ícone do menu em telas grandes por padrão */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 36px; 
+    font-family: 'Material Symbols Outlined';
+    z-index: 1001;
+}
+
+/* Estilos da navegação para desktop */
+.navbar-links-desktop 
 .navbar-ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
+
 }
 
-.navbar-ul li {
-    font-size: 0.9em;
-    font-family: "Geist Mono", monospace;
-}
-
+.navbar-links-desktop 
 .navbar-ul li:hover {
     cursor: pointer;
 }
 
+.navbar-links-desktop 
+.navbar-ul 
 .li-options {
-   transition: color 0.3s ease-in-out; 
+    font-size: 0.850em;
+    font-family: "Geist Mono", monospace;
+    transition: color 0.3s ease-in-out; 
 }
 
+.navbar-links-desktop 
+.navbar-ul 
 .li-options:hover {
     color: var(--cor1);
 }
 
+.navbar-links-desktop 
+.navbar-ul 
 .li-reserve {
+    font-size: 0.850em;
+    font-family: "Geist Mono", monospace;
     background-color: var(--cor1);
     padding: 10px 20px;
     border-radius: 7px;
     transition: background 0.5s ease-in-out;
 }
 
+.navbar-links-desktop 
+.navbar-ul 
 .li-reserve:hover {
     background-color: var(--cor0);
     color: var(--cor3);
+}
+
+/* Estilos da navegação para mobile (quando visível) */
+.navbar-links-mobile {
+    background-color: #444;
+    width: 100%;
+    position: absolute; 
+    top: 81px;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+
+     /* Controle de visibilidade e transição */
+    opacity: 0;
+    visibility: hidden; /* Esconde o elemento e o remove da árvore de acessibilidade */
+    transform: translateY(-20px); /* Começa um pouco acima para um efeito de "deslizar para baixo" */
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, visibility 0.4s;
+}
+
+/* NOVA REGRA: Estilos para o menu mobile QUANDO ESTIVER ABERTO */
+/* Ativada pela classe .menu-open no .navbar-container */
+.navbar-container.menu-open .navbar-links-mobile {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar-ul-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-ul-mobile .li-options,
+.navbar-ul-mobile .li-reserve {
+    padding: 20px 0;
+    padding-left: 40px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    font-size: 1.5rem;
+    font-family: "Geist Mono", monospace;
+    cursor: pointer;
+}
+
+.navbar-ul-mobile .li-options {
+    background-color: var(--cor5);
+}
+
+.navbar-ul-mobile .li-reserve {
+    border-radius: 0; 
+    background-color: var(--cor2);
+}
+
+@media (max-width: 800px) {
+    /* Esconde a navegação de desktop */
+    .navbar-links-desktop {
+        display: none;
+    }
+
+    /* Mostra o ícone de menu */
+    .menu-icon {
+        display: block;
+    }
 }
