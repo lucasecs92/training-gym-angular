@@ -1,18 +1,23 @@
-.articles-wrap {
-    display: flex;
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* 2 linhas de alturas iguais. Se quiser altura fixa, pode usar "550px 550px", por exemplo */
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     background-color: var(--cor3);
 }
 
-.aside-section-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 67%;
-}
+/* --- Mapeamento dos elementos no grid (Desktop) --- */
+.gym-img-one  { grid-area: 1 / 1 / 2 / 3; } /* Ocupa da linha 1 à 2, e da coluna 1 à 3 */
+.aside-one    { grid-area: 1 / 3 / 2 / 4; } /* Ocupa da linha 1 à 2, na coluna 3 */
+.aside-two    { grid-area: 2 / 1 / 3 / 2; } /* Ocupa da linha 2 à 3, na coluna 1 */
+.aside-three  { grid-area: 2 / 2 / 3 / 3; } /* Ocupa da linha 2 à 3, na coluna 2 */
+.gym-img-two  { grid-area: 2 / 3 / 3 / 4; } /* Ocupa da linha 2 à 3, na coluna 3 */
 
 .aside-one,
 .aside-two,
 .aside-three {
-    width: 50%;
     padding: 1.2rem 1.2rem 3.5rem 1.2rem;
     display: flex;
     flex-direction: column;
@@ -23,13 +28,11 @@
     border-right: 1px solid var(--cor0);
 }
 
-.gym-img-one {
-    width: 67%;
-    height: 550px;
-}
+.gym-img-one,
 .gym-img-two {
-    width: 33%;
-    height: 550px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .article-title {
@@ -45,7 +48,7 @@
 }
 
 p {
-    font-size: 16px;
+    font-size: 1em;
     color: var(--cor0);
     font-family: "Geist Mono", monospace;
     font-weight: 400;
@@ -55,15 +58,77 @@ p {
     padding: 0.5rem 1rem;
     background-color: var(--cor0);
     color: var(--cor3);
-    width: 20%;
+    width: fit-content;
+    min-width: 120px;
     text-align: center;
     border-radius: 5px;
     font-size: 0.9em;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .about-us:hover {
     cursor: pointer;
     background-color: var(--cor1);
     color: var(--cor0);
+}
+
+@media (max-width: 1320px) {
+    .aside-one,
+    .aside-two,
+    .aside-three {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .article-title {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 990px) {
+    .article-title {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    .articles-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gym-img-one,
+    .aside-one,
+    .aside-two,
+    .aside-three,
+    .gym-img-two {
+        grid-area: auto;
+    }
+
+    .gym-img-one,
+    .gym-img-two {
+        height: 350px;
+    }
+
+    .aside-one,
+    .aside-two,
+    .aside-three {
+        padding: 2rem;
+    }
+
+    .aside-two {
+        border-right: none;
+    }
+
+    .article-title {
+        font-size: 2.5em;
+    }
+
+    .about-us {
+        width: 40%;
+    }
 }
