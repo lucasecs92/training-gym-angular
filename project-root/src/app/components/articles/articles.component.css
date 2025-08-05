@@ -111,13 +111,14 @@ p {
 
     .gym-img-one,
     .gym-img-two {
-        height: 350px;
+        height: 250px;
     }
 
     .aside-one,
     .aside-two,
     .aside-three {
         padding: 2rem;
+        gap: 1rem;
     }
 
     .aside-two {
@@ -125,7 +126,7 @@ p {
     }
 
     .article-title {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .about-us {
