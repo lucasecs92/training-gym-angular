@@ -32,7 +32,7 @@ h1 {
 .community-schedule {
     border-top: 0.5px solid var(--cor0);
     padding: 1.8rem 1.2rem;
-    font-family: "Anek Tamil", sans-serif;
+    font-family: "Anek Malayalam", sans-serif;
 }
 
 .community-schedule h2 {
@@ -46,7 +46,8 @@ h1 {
 }
 
 .community-schedule p {
-   font-size: 1.160em;
+   font-size: 1em;
+   font-family: "Geist", sans-serif;
    padding-top: 5px;
 }
 
@@ -66,7 +67,7 @@ h1 {
     grid-area: 5 / 1 / 6 / 2; 
     border-top: 0.5px solid var(--cor0);
     padding: 2.8rem 1.2rem;
-    font-family: "Anek Tamil", sans-serif;
+    font-family: "Geist Mono", monospace;
 }
 .gym-img-three { 
     grid-area: 1 / 2 / 6 / 3; 
@@ -104,7 +105,7 @@ h1 {
         font-size: 2.2em;
     }
     .community-schedule p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
@@ -113,12 +114,11 @@ h1 {
         grid-template-columns: 1fr;
         grid-template-rows: auto; 
     }
-    
-    .community-schedule,
-    .community-schedule-btn {
-        background-color: transparent;
-    }
 
+    .community-schedule-btn {
+        text-align: center;
+    }
+    
     .gym-img-three { 
         grid-area: 1 / 1 / 2 / 2; 
         height: 250px; 
