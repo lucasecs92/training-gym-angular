@@ -11,6 +11,7 @@
 
 p {
     font-family: "Geist", sans-serif;
+    font-size: 1em;
 }
 
 h1 {
@@ -24,17 +25,41 @@ h1 {
 .reserve-btn {
     font-family: "Geist Mono", monospace;
     font-size: 0.9em;
-    padding: 1rem 0.1rem;
+    padding: 0.8rem 1rem;
     background-color: var(--cor3);
     color: var(--cor0);
-    width: 15%;
+    width: auto;
     text-align: center;
     border-radius: 8px;
-    transition: background 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .reserve-btn:hover {
     background-color: var(--cor0);
     color: var(--cor3);
     cursor: pointer;
+}
+
+@media (max-width: 1330px) {
+    h1 {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .reserve-container {
+        padding: 2rem 3rem;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
 }
