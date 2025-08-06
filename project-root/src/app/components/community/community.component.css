@@ -154,4 +154,7 @@ h1 {
     .community-span {
         padding-left: 0;
     }
+    .community-schedule h3 {
+        padding-bottom: 0.5rem;
+    }
 }
