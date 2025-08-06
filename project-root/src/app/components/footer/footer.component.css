@@ -62,3 +62,29 @@ a:hover {
     justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+    .footer-container {
+        gap: 5rem;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .navbar-logo {
+        width: 150px;
+        height: 90px;
+    }
+    .footer-div-wrap {
+        width: 40%;
+    }
+    .footer-down {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .footer-div-wrap {
+        width: 60%;
+    }
+}
