@@ -5,14 +5,18 @@
     padding: 15px 20px;
     background-color: var(--cor3);
     color: var(--cor0);
-    position: relative;
-    transition: background-color 0.4s ease-in-out;
+    border-bottom: 1px solid var(--cor0);
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    transition: all 0.3s ease-in-out;
 }
 
-/* MODIFICAÇÃO: Nova regra para quando o menu estiver aberto */
 /* Isso muda a cor do navbar quando a classe .menu-open é adicionada */
 .navbar-container.menu-open {
-    background-color: var(--cor5); /* <-- NOVA REGRA */
+    background-color: var(--cor5); 
 }
 
 .navbar-wrap {
@@ -53,9 +57,9 @@
 .navbar-links-desktop 
 .navbar-ul 
 .li-options {
-    font-size: 0.850em;
+    font-size: 0.9em;
     font-family: "Geist Mono", monospace;
-    transition: color 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out; 
 }
 
 .navbar-links-desktop 
@@ -67,12 +71,12 @@
 .navbar-links-desktop 
 .navbar-ul 
 .li-reserve {
-    font-size: 0.850em;
+    font-size: 0.9em;
     font-family: "Geist Mono", monospace;
     background-color: var(--cor1);
     padding: 10px 20px;
     border-radius: 7px;
-    transition: background 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar-links-desktop 
@@ -92,10 +96,10 @@
     z-index: 1000;
     background-color: transparent;
 
-     /* Controle de visibilidade e transição */
+    /* Controle de visibilidade e transição */
     opacity: 0;
-    visibility: hidden; /* Esconde o elemento e o remove da árvore de acessibilidade */
-    transform: translateY(-20px); /* Começa um pouco acima para um efeito de "deslizar para baixo" */
+    visibility: hidden; 
+    transform: translateY(-20px);
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, visibility 0.4s;
 }
 
@@ -123,6 +127,7 @@
     width: 100%;
     text-align: left;
     border-bottom: 1px solid #555;
+    font-weight: 600;
     font-size: 1.5rem;
     font-family: "Geist Mono", monospace;
     cursor: pointer;
