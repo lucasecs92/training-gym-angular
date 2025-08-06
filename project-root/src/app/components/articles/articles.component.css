@@ -1,7 +1,6 @@
 .articles-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    /* 2 linhas de alturas iguais. Se quiser altura fixa, pode usar "550px 550px", por exemplo */
     grid-template-rows: repeat(2, 1fr); 
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -9,11 +8,11 @@
 }
 
 /* --- Mapeamento dos elementos no grid (Desktop) --- */
-.gym-img-one  { grid-area: 1 / 1 / 2 / 3; } /* Ocupa da linha 1 à 2, e da coluna 1 à 3 */
-.aside-one    { grid-area: 1 / 3 / 2 / 4; } /* Ocupa da linha 1 à 2, na coluna 3 */
-.aside-two    { grid-area: 2 / 1 / 3 / 2; } /* Ocupa da linha 2 à 3, na coluna 1 */
-.aside-three  { grid-area: 2 / 2 / 3 / 3; } /* Ocupa da linha 2 à 3, na coluna 2 */
-.gym-img-two  { grid-area: 2 / 3 / 3 / 4; } /* Ocupa da linha 2 à 3, na coluna 3 */
+.gym-img-one  { grid-area: 1 / 1 / 2 / 3; } 
+.aside-one    { grid-area: 1 / 3 / 2 / 4; } 
+.aside-two    { grid-area: 2 / 1 / 3 / 2; } 
+.aside-three  { grid-area: 2 / 2 / 3 / 3; } 
+.gym-img-two  { grid-area: 2 / 3 / 3 / 4; }
 
 .aside-one,
 .aside-two,
@@ -101,11 +100,11 @@ p {
         grid-template-rows: repeat(5, auto);
     }
 
-    .gym-img-one  { grid-area: 1 / 1 / 2 / 2; } /* div1 -> Posição 1 */
-    .aside-one    { grid-area: 2 / 1 / 3 / 2; } /* div2 -> Posição 2 */
-    .gym-img-two  { grid-area: 3 / 1 / 4 / 2; } /* div5 -> Posição 3 (REORDENADO) */
-    .aside-two    { grid-area: 4 / 1 / 5 / 2; } /* div3 -> Posição 4 */
-    .aside-three  { grid-area: 5 / 1 / 6 / 2; } /* div4 -> Posição 5 */
+    .gym-img-one  { grid-area: 1 / 1 / 2 / 2; } 
+    .aside-one    { grid-area: 2 / 1 / 3 / 2; } 
+    .gym-img-two  { grid-area: 3 / 1 / 4 / 2; } 
+    .aside-two    { grid-area: 4 / 1 / 5 / 2; } 
+    .aside-three  { grid-area: 5 / 1 / 6 / 2; } 
 
     .gym-img-one,
     .gym-img-two {
