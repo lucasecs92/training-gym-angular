@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ReserveComponent } from './pages/reserve/reserve.component';
 
 export const routes: Routes = [
     // Rota padrão (página inicial)
@@ -8,6 +9,9 @@ export const routes: Routes = [
     
     // Rota para a página "Sobre"
     { path: 'sobre', component: AboutComponent },
+
+    // Rota para a página "Reserve"
+    { path: 'reserve', component: ReserveComponent },
 
     // (Opcional) Redirecionamento para a rota 'inicio' funcionar também
     { path: 'inicio', redirectTo: '', pathMatch: 'full' } 
