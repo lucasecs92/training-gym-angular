@@ -1,11 +1,12 @@
-import { NgIf, NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgIf, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  standalone: true, // Add 'standalone: true' pois o seu 'imports' estava vazio, indicando que é um componente standalone.
+  standalone: true, // indicando que é um componente standalone.
   imports: [
-    NgOptimizedImage, NgIf
+    NgOptimizedImage, NgIf, CommonModule, RouterLink
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
