@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReserveComponent } from './reserve.component';
+import { JoinComponent } from './join.component';
 
-describe('ReserveComponent', () => {
-  let component: ReserveComponent;
-  let fixture: ComponentFixture<ReserveComponent>;
+describe('JoinComponent', () => {
+  let component: JoinComponent;
+  let fixture: ComponentFixture<JoinComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ReserveComponent]
+      imports: [JoinComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ReserveComponent);
+    fixture = TestBed.createComponent(JoinComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,4 +1,4 @@
-.reserve-container {
+.join-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ h1 {
     line-height: 0.9;
 }
 
-.reserve-btn {
+.join-btn {
     font-family: "Geist Mono", monospace;
     font-size: 0.9em;
     padding: 0.8rem 1rem;
@@ -34,7 +34,7 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-.reserve-btn:hover {
+.join-btn:hover {
     background-color: var(--cor0);
     color: var(--cor3);
     cursor: pointer;
@@ -47,7 +47,7 @@ h1 {
 }
 
 @media (max-width: 800px) {
-    .reserve-container {
+    .join-container {
         padding: 2rem 3rem;
     }
     h1 {
