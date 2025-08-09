@@ -86,6 +86,7 @@ h1 {
     border-radius: 5px;
     font-size: 0.9em;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .btn-aulas:hover {
