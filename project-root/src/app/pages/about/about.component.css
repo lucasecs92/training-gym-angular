@@ -1,17 +1,135 @@
+.about-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 h1 {
-    line-height: 1.5;
-    color: var(--cor0);
-    padding: 0.5rem 1.3rem;
+    line-height: 1;
+    padding: 0.5rem 0;
     font-size: 7em;
     font-family: "Anek Tamil", sans-serif;
     font-weight: 800;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     letter-spacing: -6.5px;
+    padding: 1rem 2rem;
 }
 
 .about-span {
     color: var(--cor2);
     padding-left: 15px;
+}
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 500px 500px 550px; 
+}
+
+/* --- Mapeamento dos elementos no grid (Desktop) --- */
+.aside-one      { grid-area: 1 / 1 / 2 / 2; }
+.gym-img-one    { grid-area: 1 / 2 / 2 / 3; }
+.gym-img-two    { grid-area: 2 / 1 / 3 / 2; }
+.aside-two      { grid-area: 2 / 2 / 3 / 3; }
+.gym-img-three  { grid-area: 3 / 1 / 4 / 3; }
+
+.gym-img-one,
+.gym-img-two,
+.gym-img-three {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.aside-one,
+.aside-two {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.aside-one {
+    background-color: var(--cor2);
+}
+.aside-one .about-title {
+    width: 80%;
+}
+.aside-two {
+    background-color: var(--cor3);
+}
+
+.about-title {
+    font-family: "Anek Tamil", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+.about-content p {
+    font-family: "Geist", sans-serif;
+    line-height: 1.5;
+}
+
+.about-content h4 {
+    font-size: 1.4em;
+    font-family: "Anek Malayalam", sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 6em;
+        letter-spacing: -5px;
+    }
+    .about-title {
+        font-size: 1.8em;
+    }
+    .about-content-grid {
+        grid-template-rows: 300px 300px 400px; 
+    }
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 4em;
+        letter-spacing: -3px;
+    }
+  
+    .about-content-grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(5, auto);
+        gap: 0; 
+    }
+
+    /* --- Novo mapeamento dos elementos para o layout móvel --- */
+    .aside-one      { grid-area: 1 / 1 / 2 / 2; }
+    .gym-img-one    { grid-area: 2 / 1 / 3 / 2; }
+    .aside-two      { grid-area: 3 / 1 / 4 / 2; }
+    .gym-img-two    { grid-area: 4 / 1 / 5 / 2; }
+    .gym-img-three  { grid-area: 5 / 1 / 6 / 2; }
+
+    .about-content-grid img {
+        height: 300px; /* Altura fixa para imagens no mobile */
+    }
+
+    .aside-one,
+    .aside-two {
+        padding: 2rem 1.5rem;
+        border-bottom: 1px solid var(--cor2); 
+    }
+
+    .aside-one {
+        border-top: 1px solid var(--cor2);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 3em;
+        letter-spacing: -2px;
+    }
+    .about-title {
+        font-size: 1.6em;
+    }
 }
