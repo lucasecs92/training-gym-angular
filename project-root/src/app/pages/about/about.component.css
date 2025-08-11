@@ -5,12 +5,11 @@
 
 h1 {
     line-height: 1;
-    padding: 0.5rem 0;
     font-size: 7em;
     font-family: "Anek Tamil", sans-serif;
     font-weight: 800;
     letter-spacing: -6.5px;
-    padding: 1rem 2rem;
+    padding: 1.2rem 1.2rem 0 1.2rem;
 }
 
 .about-span {
@@ -42,7 +41,7 @@ h1 {
 
 .aside-one,
 .aside-two {
-    padding: 2rem;
+    padding: 2rem 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,18 +78,32 @@ h1 {
 
 @media (max-width: 1200px) {
     h1 {
-        font-size: 6em;
+        font-size: 4.5em;
         letter-spacing: -5px;
+        padding-bottom: 0.5rem;
     }
     .about-title {
-        font-size: 1.8em;
+        font-size: 2.2em;
+    }
+    .aside-one .about-title {
+        width: 100%;
+    }
+    .about-content p {
+        line-height: 1.3;
     }
     .about-content-grid {
-        grid-template-rows: 300px 300px 400px; 
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 370px 370px 400px; 
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 915px) {
+    .about-content p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 800px) {
     h1 {
         font-size: 4em;
         letter-spacing: -3px;
