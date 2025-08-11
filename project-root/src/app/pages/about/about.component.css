@@ -116,10 +116,10 @@ h1 {
     }
 
     /* --- Novo mapeamento dos elementos para o layout móvel --- */
-    .aside-one      { grid-area: 1 / 1 / 2 / 2; }
-    .gym-img-one    { grid-area: 2 / 1 / 3 / 2; }
-    .aside-two      { grid-area: 3 / 1 / 4 / 2; }
-    .gym-img-two    { grid-area: 4 / 1 / 5 / 2; }
+    .gym-img-one    { grid-area: 1 / 1 / 2 / 2; }
+    .aside-one      { grid-area: 2 / 1 / 3 / 2; }
+    .gym-img-two    { grid-area: 3 / 1 / 4 / 2; }
+    .aside-two      { grid-area: 4 / 1 / 5 / 2; }
     .gym-img-three  { grid-area: 5 / 1 / 6 / 2; }
 
     .about-content-grid img {
