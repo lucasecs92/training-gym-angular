@@ -7,6 +7,7 @@
     background-color: var(--cor2);
     height: 40vh; 
     gap: 1.2rem;
+    border-top: 1px solid var(--cor0);
 }
 
 p {

@@ -24,9 +24,7 @@ h1 {
     background-color: var(--cor3)
 }
 
-.aside-one, 
-.aside-two, 
-.aside-three {
+.reserve-wrap > aside {
     padding: 1.7rem;
     display: flex;
     flex-direction: column;
@@ -34,6 +32,10 @@ h1 {
     gap: 4.5rem;
     border-right: 1px solid var(--cor0);
     width: 33.33%;
+}
+
+.reserve-wrap > aside:last-child {
+    border-right: none;
 }
 
 .reserve-title {
@@ -73,4 +75,45 @@ h1 {
     background-color: var(--cor0);
     color: var(--cor3);
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4.5em;
+        letter-spacing: -5px;
+        padding-bottom: 0.5rem;
+    }
+    .reserve-title {
+        font-size: 2.2em;
+    }
+    .reserve-content {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .reserve-title {
+        font-size: 1.8em;
+    }
+    .reserve-content {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 815px) {
+    h1 {
+        font-size: 3.5em;
+        letter-spacing: -4px;
+    }
+    .reserve-wrap {
+        flex-direction: column;
+    }
+    .reserve-wrap > aside {
+        width: auto;
+        border-right: none;
+    }
+    .aside-one, 
+    .aside-two {
+        border-bottom: 1px solid var(--cor0);
+    }
 }
