@@ -21,6 +21,7 @@ h1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 500px 500px 550px; 
+    border-top: 1px solid var(--cor0);
 }
 
 /* --- Mapeamento dos elementos no grid (Desktop) --- */

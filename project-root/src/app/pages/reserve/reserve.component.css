@@ -1,0 +1,76 @@
+.reserve-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+h1 {
+    line-height: 1;
+    font-size: 7em;
+    font-family: "Anek Tamil", sans-serif;
+    font-weight: 800;
+    letter-spacing: -6.5px;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+}
+
+.reserve-span {
+    color: var(--cor2);
+    padding-left: 15px;
+}
+
+.reserve-wrap {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid var(--cor0);
+    background-color: var(--cor3)
+}
+
+.aside-one, 
+.aside-two, 
+.aside-three {
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4.5rem;
+    border-right: 1px solid var(--cor0);
+    width: 33.33%;
+}
+
+.reserve-title {
+    font-family: "Anek Malayalam", sans-serif;
+    font-size: 2.8em;
+    line-height: 0.9;
+}
+
+.reserve-content {
+    font-family: "Geist", sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--cor0);
+    padding-bottom: 0.5rem;
+}
+
+.reserve-btn {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 0.8rem 1rem;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    width: auto;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.reserve-btn:hover {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    cursor: pointer;
+}
